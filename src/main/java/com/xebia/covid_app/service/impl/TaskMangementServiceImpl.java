@@ -113,6 +113,7 @@ public class TaskMangementServiceImpl implements TaskMangementService {
         for (int i = 0; i < taskList.size(); i++) {
 
             response = new TaskResponse();
+            response.setTaskDate(taskList.get(i).getTaskDate());
             response.setId(taskList.get(i).getId());
             response.setTaskDescription(taskList.get(i).getTaskDescription());
             response.setManPower(taskList.get(i).getManpower());
